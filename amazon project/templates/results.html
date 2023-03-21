@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/index.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>amazon</h1>
+
+    <div class="center">
+        <center><table border="1"></center>
+
+            <tr>
+                
+                <th width="650">COMMENT</th>
+                <th width="350">COMMENT_H</th>
+                <th width="150">NAME</th>
+                <th width="100">PRICE</th>
+
+                <th width="100">RATINGS</th>
+            </tr>
+
+            {% for review1 in reviews %}
+
+            <tr>
+                
+                <td> {{review['COMMENT']}} </td>
+                <td> {{review['COMMENT_H']}} </td>
+                <td> {{review['NAME']}} </td>
+                <td> {{review['PRICE']}} </td>
+
+                <td> {{review['RATINGS']}} </td>
+
+
+            </tr>
+            {% endfor %}
+        </table>
+
+    </div>
+</body>
+</html>
